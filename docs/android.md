@@ -4,9 +4,19 @@
 ```
 pkg install build-essential libandroid-spawn libjpeg-turbo git
 pkg install python python-pip python-numpy
-pip install ipython sympy requests dateparser tzdata
 ```
-2. Install CalcPy (ignore dependencies)
+2-0. (Optional) Make virtual env
+```
+pip install virtualenv
+virtualenv --system-site-packages calcpy_venv_path
+cd calcpy_venv_path
+source ./bin/activate.sh
+```
+2. Install dependencies on pip
+```
+pip install ipython sympy requests dateparser tzdata pickshare
+```
+3. Install CalcPy (ignore dependencies)
 ```
 pip install --no-deps git+https://github.com/idanpa/calcpy
 ```
