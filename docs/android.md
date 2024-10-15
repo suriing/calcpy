@@ -14,7 +14,7 @@ source ./bin/activate.sh
 ```
 2. Install dependencies on pip
 ```
-pip install ipython sympy requests dateparser tzdata pickshare
+pip install ipython sympy requests dateparser tzdata pickleshare
 ```
 3. Install CalcPy (ignore dependencies)
 ```
